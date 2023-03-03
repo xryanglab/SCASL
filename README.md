@@ -62,7 +62,7 @@ There are also some other parameters that users can adjust by themselves to opti
 ## Result
 The final output file is a cluster label file, **preds** represents the predicted AS cluster label. At the same time, many intermediate files will be generated (such as AS probability matrix, NA position information), and users can extract intermediate files as needed.
 
-As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam dataset. You can also choose to use more cells (from TNBC-2) in `data/junction` for testing.
+As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam data for scRNA-seq. You can also choose to use more cells (from TNBC-2) in `data/junction` for testing.
 
 ## License
 DeepLinc is licensed under the MIT license.
