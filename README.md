@@ -65,4 +65,4 @@ The final output file is a cluster label file, **preds** represents the predicte
 As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam data for scRNA-seq. You can also choose to use more cells (from TNBC-2) in `data/junction` for testing.
 
 ## License
-DeepLinc is licensed under the MIT license.
+SCASL is licensed under the MIT license.
