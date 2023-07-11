@@ -20,6 +20,7 @@ The packages that SCASL depends on and the versions corresponding to the package
 > conda activate scasl
 > conda install -c conda-forge pandas pyyaml seaborn tqdm easydict umap-learn
 > conda install -c davidaknowles r-leafcutter
+> conda install -c bioconda samtools -y
 ```
 
 It should be noted that if leafcutter cannot be downloaded successfully with conda, you can also consider using source code.
