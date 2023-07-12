@@ -23,10 +23,11 @@ The packages that SCASL depends on and the versions corresponding to the package
 > conda install -c bioconda samtools -y
 ```
 
-It usually takes less than twenty minutes to complete the environment configuration. It should be noted that if leafcutter cannot be downloaded successfully with conda, you can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
+It should be noted that if leafcutter cannot be downloaded successfully with conda, you can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
 ```bash
 > git clone https://github.com/davidaknowles/leafcutter
 ```
+It usually takes less than twenty minutes to complete the environment configuration. 
 
 ## Run
 ```bash
