@@ -1,3 +1,7 @@
+# This file is intended for dimensionality reduction and clustering of AS probability matrix
+
+# python cluster.py -l data/Demo_label.csv -t type -o Demo_results.csv -n 3 --manifold umap -p 20
+
 import pandas as pd
 import numpy as np
 import umap
@@ -11,10 +15,6 @@ from sklearn.metrics import calinski_harabasz_score
 import os
 
 plt.switch_backend('agg')
-
-
-# sample command
-# python cluster.py -l data/Demo_label.csv -t type -o Demo_results.csv -n 3 --manifold umap -p 20
 
 
 def reduce_dim(mat, manifold_alg, pca_dim):
