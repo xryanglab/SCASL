@@ -1,3 +1,8 @@
+# This file aims to quality filtering
+# The input file is the junction matrix, and the output file is the filtered AS matrix
+
+# python filter.py --img_path process_result --sites 4 --samples 100
+
 import numpy as np
 import pandas as pd
 import argparse
