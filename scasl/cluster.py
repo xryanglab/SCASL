@@ -14,7 +14,7 @@ plt.switch_backend('agg')
 
 
 # sample command
-# python cluster.py -m ilc_mat_pca.npy --csv ilc_impute.csv -l ilc_celltype.csv -t facs_gating -o ilc_cluster.csv -n 6 --manifold umap -p 10
+# python cluster.py -l data/Demo_label.csv -t type -o Demo_results.csv -n 3 --manifold umap -p 20
 
 
 def reduce_dim(mat, manifold_alg, pca_dim):
