@@ -1,3 +1,8 @@
+# This file aims to calculate the AS probability and NA imputation 
+# The input file is the filtered AS junction reads matrix, and the output file is the final AS matrix
+
+# python normalize.py
+
 import numpy as np
 import pandas as pd
 from tqdm import trange
