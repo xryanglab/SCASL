@@ -3,9 +3,9 @@ process:
   junction: data/junc
   lc: leafcutter
 threshold:
-  sites_initial: 10
+  sites_initial: 4
   runs_initial: 100
-  sites_quality: 20
+  sites_quality: 10
   runs_quality: 100
 io:
   log_scale_histogram: false
@@ -16,10 +16,10 @@ io:
   output_path: process_result
 impute:
   num_iteration: 3
-  knn: 10
+  knn: 5
 cluster:
   pca_dimension: 20
   dimension_reduction_method: umap
   cluster_algorithm: spectral
-  num_cluster: 8
+  num_cluster: 3
 
