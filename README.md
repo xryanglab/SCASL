@@ -17,7 +17,7 @@ The packages that SCASL depends on and the versions corresponding to the package
 ### Environment Setup
 ```bash
 > conda create -n scasl -c conda-forge scikit-learn python=3.9
-> conda activate scasl
+> source activate scasl
 > conda install -c conda-forge pandas pyyaml seaborn tqdm easydict umap-learn
 > conda install -c davidaknowles r-leafcutter
 > conda install -c bioconda samtools -y
