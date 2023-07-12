@@ -7,7 +7,7 @@
 import numpy as np
 import pandas as pd
 import os
-from .utils import write_json
+from utils import write_json
 from tqdm import tqdm
 import argparse
 
