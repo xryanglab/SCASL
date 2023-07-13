@@ -66,7 +66,7 @@ The final output file is a cluster label file, **preds** represents the predicte
 
 As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam data for scRNA-seq. You can also choose to use the demo of the intermediate files (from TNBC-2) in `data/junction` for testing.
 
-The total test time of the demo files is expected to be less than 5 minutes. However, github is not suitable for uploading large amounts of data, so the test files used as demo are very few and are only used to show the operation and speed of the software. At the same time, we also recommend running the script step by step to make it easier to adjust parameters at any time. The comments and running code of step-by-step running are displayed at the beginning of each script in scasl. Due to the randomness of the interpolation, dimensionality reduction and unsupervised clustering processes, there may be some differences between the running results, but the results are generally consistent when the parameters are completely consistent.
+The total test time of the demo files is expected to be less than 5 minutes. However, github is not suitable for uploading large amounts of data, so the test files used as demo are very few and are only used to show the operation and speed of the software. Due to the randomness of the interpolation, dimensionality reduction and unsupervised clustering processes, there may be some differences between the running results, but the results are generally consistent when the parameters are completely consistent.
 
 ## License
 SCASL is licensed under the Apache License 2.0.
