@@ -32,7 +32,7 @@ It usually takes less than 15 minutes to complete the environment configuration.
 ## Run
 ```bash
 > source activate scasl
-> python main.py -y <your_config_file_path>
+> python main.py -y configs/srr.yaml
 ```
 
 ### Parameter settings
