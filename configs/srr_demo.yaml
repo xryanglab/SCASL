@@ -1,0 +1,23 @@
+process:
+  junction: data/junc
+threshold:
+  sites_initial: 1
+  runs_initial: 1
+  sites_quality: 3
+  runs_quality: 5
+io:
+  log_scale_histogram: false
+  use_label: true
+  label_file: data/label.csv
+  truth_column: type
+  run_column: Run
+  output_path: process_result
+impute:
+  num_iteration: 3
+  knn: 5
+cluster:
+  pca_dimension: 20
+  dimension_reduction_method: umap
+  cluster_algorithm: spectral
+  num_cluster: 3
+
