@@ -1,5 +1,7 @@
 process:
+  bam: bam_path
   junction: data/junc
+  lc: leafcutter
 threshold:
   sites_initial: 1
   runs_initial: 1
