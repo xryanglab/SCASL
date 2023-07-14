@@ -38,7 +38,7 @@ It usually takes less than 15 minutes to complete the environment configuration.
 ### Parameter settings
 By default, this method uses the bam file (any mapping method can be adopted) as the initial input and can directly output the clustering results. At the same time, it also supports users to use intermediate files as input to run the py files in the scasl folder step by step to get the results they want. 
 
-The following parameters can be adjusted directly in `srr.yaml` to use scasl:
+The following parameters can be adjusted directly in `configs/srr.yaml` to use scasl:
 
 - **bam**: bam file directory.
 - **lc**: directory of leafcutter.
