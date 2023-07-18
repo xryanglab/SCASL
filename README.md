@@ -1,5 +1,5 @@
 # SCASL: single-cell clustering based on alternative splicing landscapes #
-SCASL is a strategy of cell clustering by systematically assessing the landscapes of single-cell RNA splicing. SCASL is mainly used to 1. Extraction of alternative splicing information from scRNA-seq data, 2. identify novel single cell cluster based on the AS level, 3. reveal the transition relationship between clusters and the differential splicing pattern, 4. identify important differential splicing events.
+SCASL is a strategy of cell clustering by systematically assessing the landscapes of single-cell RNA splicing. SCASL is mainly used to 1) Extraction and inputation of alternative splicing information from scRNA-seq data, 2) identify novel single cell cluster based on the AS level, 3) reveal the transition relationship between clusters and the differential splicing pattern, 4) identify important differential splicing events.
 
 If you want to use this method or our result in your research, please cite our paper, the detailed introduction and application of the algorithm can also be found in the paper.
 
@@ -12,7 +12,7 @@ Xianke Xiang, Xuerui Yang.
 ## Getting start ##
 
 ### Dependencies and requirements
-The packages that SCASL depends on and the versions corresponding to the packages are organized in `requirements.txt`. The package has been tested on conda 4.5.11 and is platform independent (tested on Windows, macOS and Linux). 
+The packages that SCASL depends on and the versions corresponding to the packages are organized in `requirements.txt`. The package has been tested on conda 4.10.3 and is platform independent (tested on Windows, macOS and Linux). 
 
 ### Environment Setup
 ```bash
@@ -36,7 +36,7 @@ It usually takes less than 15 minutes to complete the environment configuration.
 ```
 
 ### Parameter settings
-By default, this method uses the bam file (any mapping method can be adopted) as the initial input and can directly output the clustering results. At the same time, it also supports users to use intermediate files as input to run the py files in the scasl folder step by step to get the results they want. 
+By default, this method uses the **bam** file (any mapping method can be adopted) as the **initial input** and can directly output the clustering results. At the same time, it also supports users to use intermediate files as input to run the py files in the scasl folder step by step to get the results they want. 
 
 The following parameters can be adjusted directly in `configs/srr.yaml` to use scasl:
 
@@ -62,7 +62,7 @@ The following parameters can be adjusted directly in `configs/srr.yaml` to use s
 There are also some other parameters that users can adjust by themselves to optimize the clustering effect according to their own data, such as setting **max_n_cluster** in `cluster.py` to output clustering scores to assist in judging the most appropriate number of clusters.
 
 ## Result
-The final output file is a cluster label file, **preds** represents the predicted AS cluster label. At the same time, many intermediate files will be generated (such as AS probability matrix, NA position information), and users can extract intermediate files as needed.
+The final **output** file is a cluster label file, **preds** represents the predicted **AS cluster** label. At the same time, many intermediate files will be generated (such as AS probability matrix, NA position information), and users can extract intermediate files as needed.
 
 As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam data for scRNA-seq. You can also choose to use the demo of the intermediate files (from TNBC-2) in `data/junction` for testing.
 
