@@ -1,5 +1,5 @@
 # SCASL: single-cell clustering based on alternative splicing landscapes #
-SCASL is a strategy of cell clustering by systematically assessing the landscapes of single-cell RNA splicing. SCASL is mainly used to: 1) Extraction and inputation of alternative splicing information from scRNA-seq data, 2) identify novel single cell cluster based on the AS level, 3) reveal the transition relationship between clusters and the differential splicing pattern, 4) identify important differential splicing events.
+SCASL is a strategy of cell clustering by systematically assessing the landscapes of single-cell RNA splicing. SCASL is mainly used to: 1) Extraction of AS information from scRNA-seq data and imputation of missing values, 2) identify novel single cell cluster based on the AS level, 3) reveal the transition relationship between clusters and the differential splicing pattern, 4) identify important differential splicing events.
 
 If you want to use this method or our result in your research, please cite our paper, the detailed introduction and application of the algorithm can also be found in the paper.
 
