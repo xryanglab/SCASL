@@ -1,5 +1,5 @@
 process:
-  junction: data/junc
+  junction: data/junction
 threshold:
   sites_initial: 1
   runs_initial: 1
@@ -8,7 +8,7 @@ threshold:
 io:
   log_scale_histogram: false
   use_label: true
-  label_file: data/label.csv
+  label_file: data/Demo_label.csv
   truth_column: type
   run_column: Run
   output_path: process_result
