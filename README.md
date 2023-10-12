@@ -23,14 +23,14 @@ The packages that SCASL depends on and the versions corresponding to the package
 > conda install -c bioconda samtools -y
 ```
 
-It should be noted that if leafcutter cannot be downloaded successfully with conda, you can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
+**Note** 
+
+1. If leafcutter cannot be downloaded successfully with conda, you can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
 ```bash
 > git clone https://github.com/davidaknowles/leafcutter
 ```
 
-**Note** 
-
-In addition to utilizing Leafcutter, users have the option to employ the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files.
+2. In addition to utilizing Leafcutter, users have the option to employ the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files.
 
 It usually takes less than 15 minutes to complete the environment configuration. 
 
