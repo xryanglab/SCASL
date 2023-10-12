@@ -23,7 +23,7 @@ The packages that SCASL depends on and the versions corresponding to the package
 > conda install -c bioconda samtools -y
 ```
 
-**Note** 
+**Tips** 
 
 1. If leafcutter cannot be downloaded successfully with conda, you can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
 ```bash
