@@ -27,11 +27,12 @@ It should be noted that if leafcutter cannot be downloaded successfully with con
 ```bash
 > git clone https://github.com/davidaknowles/leafcutter
 ```
-It usually takes less than 15 minutes to complete the environment configuration. 
 
 **Note** 
 
 In addition to utilizing Leafcutter, users have the option to employ the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files.
+
+It usually takes less than 15 minutes to complete the environment configuration. 
 
 ## Run
 ```bash
