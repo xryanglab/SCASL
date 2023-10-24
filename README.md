@@ -69,6 +69,15 @@ There are also some other parameters that users can adjust by themselves to opti
 ## Result
 The final **output** file is a cluster label file, **preds** represents the predicted **AS cluster** label. At the same time, many intermediate files will be generated (such as AS probability matrix, NA position information), and users can extract intermediate files as needed.
 
+Elucidation of intermediate files:
+- **site_hist.png**: This figure is used to assist in the selection of filter parameters. The horizontal axis denotes the count of non-NA samples at an individual site, while the vertical axis represents the number of such sites.
+- **site_hist.png**: This figure is used to assist in the selection of filter parameters. The horizontal axis denotes the count of non-NA sites at an individual sample, while the vertical axis represents the number of such samples.
+- **reduce.png**: This figure represents the outcome of the final dimensionality reduction visualization, where the coloring is based on the ground truth provided by the user.
+- **cluster.png**: This figure represents the outcome of the final dimensionality reduction visualization, where the coloring is based on the clustering results of SCASL.
+- **junc_matrix.csv,junc_mat.npy**: Junction reads matrix integrated from the single-cell file. In this matrix, the rows correspond to sites, while the columns represent cells.
+- **filtered_matrix_start,filtered_matrix_end**: Junction reads matrix after quality filtering and AS grouping, the rows correspond to sites, while the columns represent cells. Start represents grouping by upstream, end represents grouping by downstream.
+- **normalized_matrix**: The final AS probability matrix, the rows correspond to sites, while the columns represent cells.
+
 As an example of configuration file, `configs/srr.yaml` and [bam](https://drive.google.com/drive/folders/1sFBoileBgYH46QiW6mohR82fr4DUhzGJ?usp=sharing) provides a minimized version of bam data for scRNA-seq. You can also choose to use the demo of the intermediate files (from TNBC-2) in `data/junction` for testing.
 
 The total test time of the demo files is expected to be less than 3 minutes, and the results are stored in `process_result_demo`. However, github is not suitable for uploading large amounts of data, so the test files used as demo are very few and are only used to show the operation and speed of the software. Due to the randomness of the interpolation, dimensionality reduction and unsupervised clustering processes, there may be some differences between the running results, but the results are generally consistent when the parameters are completely consistent.
