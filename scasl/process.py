@@ -27,7 +27,7 @@ def get_sites(junc_dir, output_dir, save=True):
     bar = tqdm(file_list)
     bar.set_description('Loading site names')
     for filename in bar:
-        if filename.endswith('.junc'):
+        if filename.endswith('.junc') or filename.endswith('.tab'):
             get_sites_from_junction(sites_set, os.path.join(junc_dir, filename))
     sites = list(sites_set)
     sites.sort()
