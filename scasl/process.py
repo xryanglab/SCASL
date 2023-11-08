@@ -49,6 +49,13 @@ def fill_junc_matrix_from_junction(vec, fname, sites_dict):
         pos = sites_dict[site]
         vec[pos] = value
 
+def fill_junc_matrix_from_junction_star(vec, fname, sites_dict):
+    df = pd.read_csv(fname, sep='\t', header=None)
+    for line in df.values:
+        site = '_'.join([line[0], str(line[1]), str(line[2])])
+        value = line[6]
+        pos = sites_dict[site]
+        vec[pos] = value
 
 def make_junc_matrix(junc_dir, sites, sites_dict, output_dir, save=True):
     file_list = os.listdir(junc_dir)
@@ -65,6 +72,13 @@ def make_junc_matrix(junc_dir, sites, sites_dict, output_dir, save=True):
             samples.append(sample_name)
             vec = np.ones(num_sites) * np.nan
             fill_junc_matrix_from_junction(vec, os.path.join(junc_dir, filename), sites_dict)
+            mat.append(vec)
+        elif filename.endswith('.tab'):
+            num_samples += 1
+            sample_name = filename.split('.')[0]
+            samples.append(sample_name)
+            vec = np.ones(num_sites) * np.nan
+            fill_junc_matrix_from_junction_star(vec, os.path.join(junc_dir, filename), sites_dict)
             mat.append(vec)
     mat = np.stack(mat)
     if save:
