@@ -25,9 +25,10 @@ The packages that SCASL depends on and the versions corresponding to the package
 
 **Tips** 
 
-1. If leafcutter cannot be downloaded successfully with conda, users can also consider using source code and make sure to change the path of leafcutter in leafcutter/scripts/bam2junc.sh.
+1. If you encounter difficulties downloading Leafcutter using conda, you have the option to use the source code instead and add the path to the source code to the environment variable.
 ```bash
 > git clone https://github.com/davidaknowles/leafcutter
+> export PATH="YOUR_PATH_OF_LEAFCUTTER:$PATH"
 ```
 
 2. In addition to utilizing Leafcutter, users have the option to employ the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files.
