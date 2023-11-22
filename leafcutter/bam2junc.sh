@@ -8,8 +8,8 @@ juncfile=$2
 
 if [ ! -z "$leafCutterDir" ]
 then
-	samtools view $bamfile | python $leafCutterDir/scripts/filter_cs.py | $leafCutterDir/scripts/sam2bed.pl --use-RNA-strand - $bedfile
-	$leafCutterDir/scripts/bed2junc.pl $bedfile $juncfile
+	samtools view $bamfile | python $leafCutterDir/filter_cs.py | $leafCutterDir/sam2bed.pl --use-RNA-strand - $bedfile
+	$leafCutterDir/bed2junc.pl $bedfile $juncfile
 else
 	if ! which filter_cs.py>/dev/null
 	then 
