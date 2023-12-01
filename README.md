@@ -31,7 +31,7 @@ The packages that SCASL depends on and the versions corresponding to the package
 > export PATH="YOUR_PATH_OF_LEAFCUTTER:$PATH"
 ```
 
-2. In addition to using Leafcutter, users also have the option to utilize the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files. Simply modify the **junction path** to the location where the "SJ.out.tab" file is located in `configs/srr.yaml`.
+2. In addition to using Leafcutter, users also have the option to utilize the 'SJ.out.tab' files generated automatically from the STAR mapping pipeline as junction files. To modify the **junction path**, simply navigate to the location of the "SJ.out.tab" file in the `configs/srr.yaml` file.
 
 It usually takes less than 15 minutes to complete the environment configuration. 
 
