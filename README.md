@@ -3,7 +3,7 @@ SCASL is a strategy of cell clustering by systematically assessing the landscape
 
 If you want to use this method or our result in your research, please cite our paper, the detailed introduction and application of the algorithm can also be found in the paper: 
 <strong><em>Interrogations of single-cell RNA splicing landscapes with SCASL define new cell identities with physiological relevance</em></strong>
-(https://doi.org/10.1038/s41467-024-46480-9)
+(https://doi.org/10.1038/s41467-024-46480-9).
 
 ## Version
 1.0.0 (We will continue to supplement the functions and application range of scasl)
